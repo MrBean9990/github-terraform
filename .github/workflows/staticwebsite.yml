@@ -39,7 +39,8 @@ jobs:
         run: find . -name "*.tf"
 
       - name: Debug variables.tf
-        run: cat variables.tf
+        run: cat ${{ env.WORKING_DIR }}/variables.tf
+
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
