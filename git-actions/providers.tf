@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "azurerm" {
-     resource_group_name  = "mv-rg-backend-tfstate"
+    resource_group_name  = "mv-rg-backend-tfstate"
     storage_account_name = "backendsay837f7nmfc"
     container_name       = "tfstate"
     key                  = "webdemogit.terraform.tfstate"
