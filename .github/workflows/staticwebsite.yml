@@ -25,23 +25,11 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-      WORKING_DIR: ./git-actions
+      WORKING_DIR: ./github-terraform
 
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
-  # Debugging steps
-      - name: Check working directory
-        run: pwd
-
-      - name: List all Terraform files
-        run: find . -name "*.tf"
-
-      - name: Debug variables.tf
-        run: cat ./variables.tf 
-
-
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
