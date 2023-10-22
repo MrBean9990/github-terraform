@@ -6,7 +6,7 @@ variable "location" {
 variable "rg_name" {
   type        = string
   description = "Name of the resource group"
-  default     = "rg-webb"
+  default     = "rg-web"
 }
 
 variable "sa_name" {
