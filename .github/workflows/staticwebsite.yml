@@ -27,18 +27,20 @@ jobs:
       ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
       WORKING_DIR: ./terraform
 
-  # Debugging steps
-    - name: Check working directory
-      run: pwd
 
-    - name: List all Terraform files
-      run: find . -name "*.tf"
-
-    - name: Debug variables.tf
-      run: cat variables.tf
-      
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+
+  # Debugging steps
+      - name: Check working directory
+        run: pwd
+
+      - name: List all Terraform files
+        run: find . -name "*.tf"
+
+      - name: Debug variables.tf
+        run: cat variables.tf
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
