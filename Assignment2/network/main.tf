@@ -31,7 +31,7 @@ resource "azurerm_subnet_network_security_group_association" "nsg_snet_associati
 
 resource "azurerm_network_security_rule" "ssh_inbound_myIP" {
   name                        = "SSHInboundMyIP"
-  priority                    = 101
+  priority                    = 104
   direction                   = "Inbound"
   access                      = "Allow"
   protocol                    = "Tcp"
