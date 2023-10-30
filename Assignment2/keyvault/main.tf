@@ -55,5 +55,5 @@ resource "azurerm_key_vault_secret" "sa_accesskey" {
   key_vault_id = azurerm_key_vault.kv.id
   depends_on = [
     var.sa_name
-]
+  ]
 }

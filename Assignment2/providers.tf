@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.73.0"
+      version = "3.78.0"
     }
     random = {
     source = "hashicorp/random"
@@ -10,10 +10,10 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-backend-tfstate"
-    storage_account_name = "sabetfs3a9npz46p2"
+    resource_group_name  = "mv-rg-backend-tfstate"
+    storage_account_name = "backendsay837f7nmfc"
     container_name       = "tfstate"
-    key                  = "infra.terraform.tfstate"
+    key                  = "assignment2.terraform.tfstate"
   }
 }
 
