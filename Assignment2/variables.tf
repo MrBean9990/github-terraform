@@ -131,3 +131,9 @@ variable "vm_password" {
   sensitive = true
   default = "dsfSD_!EfdX12gfZ"
 }
+
+variable "rg_name" {
+  type        = string
+  description = "Name of the Azure Resource Group where resources will be created."
+  default = "mv-rg-assignment2"
+}
