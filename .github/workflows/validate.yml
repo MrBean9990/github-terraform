@@ -7,12 +7,7 @@ on:
   # Triggers the workflow on push or pull request events
  push:
     branches:
-      - 'edit-variables'
-      - 'edit-maintf'
-      - 'edit-keyvault'
-      - 'edit-storageaccount'
-      - 'edit-network'
-      - 'edit-vm'
+     - 'dev'
     paths:
       - 'Assignment2/**'
 
