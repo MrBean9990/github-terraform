@@ -3,7 +3,7 @@
 name: Deploy infrastructure
 
 # Controls when the workflow will run
- on:
+on:
   push:
     branches:
       - 'main'
