@@ -8,7 +8,7 @@ variable "kv_location" {
 variable "kv_base_name" {
   type        = string
   description = "Name of the Key Vault"
-  default     = "kvbn"
+  default     = "kv"
 }
 
 variable "sa_base_name" {
@@ -94,5 +94,5 @@ variable "vm_password" {
 variable "rg_name" {
   type        = string
   description = "Name of the Azure Resource Group where resources will be created."
-  default     = "mv-rg-assignment2"
+  default     = "mv-rg-asgn2"
 }
