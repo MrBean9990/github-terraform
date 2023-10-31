@@ -5,8 +5,8 @@ terraform {
       version = "3.78.0"
     }
     random = {
-    source = "hashicorp/random"
-    version = "3.5.1"
+      source  = "hashicorp/random"
+      version = "3.5.1"
     }
   }
   backend "azurerm" {
@@ -15,8 +15,8 @@ terraform {
     container_name       = "tfstate"
     key                  = "assignment2.terraform.tfstate"
   }
-  
-  required_version = ">= 1.0" 
+
+  required_version = ">= 1.0"
 }
 
 provider "azurerm" {
