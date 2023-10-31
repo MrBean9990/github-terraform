@@ -15,6 +15,7 @@ resource "azurerm_storage_account" "sa" {
   location                 = azurerm_resource_group.sa_rg.location
   account_tier             = "Standard"
   account_replication_type = "GRS"
+  min_tls_version          = "TLS1_2"
 
 }
 
