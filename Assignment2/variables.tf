@@ -89,7 +89,7 @@ variable "vm_password" {
   description = "Virtual machine password"
   sensitive   = true
   default     = "d2fSD_!EfdX12tTEST2"
-}
+
 
 variable "rg_name" {
   type        = string
