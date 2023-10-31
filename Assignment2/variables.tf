@@ -49,7 +49,7 @@ variable "nsg_name" {
 
 variable "subnet_name" {
   type        = string
-  description = "Subnet name"
+  description = "Subnet name1"
   default     = "subnet"
 }
 
