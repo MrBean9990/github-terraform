@@ -3,13 +3,26 @@ name: Terraform CI/CD
 on:
   pull_request:
     branches:
-      - 'main'
+      - main
       
   workflow_dispatch:
 
 jobs:
-  run-echo-1:
+  dev_stage:
+    name: Dev Stage
     runs-on: ubuntu-latest
     steps:
-      - name: Run echo 1
-        run: echo "1"
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Terraform init
+        run: terraform init
+        working-directory: ${{ env.WORKING_DIR }}
+        
+      - name: Terraform workspace select or create dev
+        run: terraform workspace select dev || terraform workspace new dev
+        working-directory: ${{ env.WORKING_DIR }}
+      
+      - name: Terraform apply dev
+        run: terraform apply -auto-approve
+        working-directory: ${{ env.WORKING_DIR }}
