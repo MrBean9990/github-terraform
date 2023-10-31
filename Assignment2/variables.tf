@@ -8,7 +8,7 @@ variable "kv_location" {
 variable "kv_base_name" {
   type        = string
   description = "Name of the Key Vault"
-  default     = "kv"
+  default     = "keyv"
 }
 
 variable "sa_base_name" {
@@ -49,7 +49,7 @@ variable "nsg_name" {
 
 variable "subnet_name" {
   type        = string
-  description = "Subnet name1"
+  description = "Subnet name"
   default     = "subnet"
 }
 
