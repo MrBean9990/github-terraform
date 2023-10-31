@@ -1,26 +1,3 @@
-variable "company" {
-  type        = string
-  description = "Company name"
-  default = "LearnTF"
-}
-
-variable "project" {
-  type        = string
-  description = "Project name"
-  default = "Project TF"
-}
-
-variable "billing_code" {
-  type        = string
-  description = "Billing code"
-  default = "TF12345"
-}
-
-variable "kv_rgname" {
-  type        = string
-  description = "Key Vault Resource Group Name"
-  default = "rg-kv"
-}
 
 variable "kv_location" {
   type        = string
@@ -40,12 +17,6 @@ variable "sa_base_name" {
   default = "sabn"
 }
 
-variable "sa_rgname" {
-  type        = string
-  description = "The name of the resource group"
-  default = "rg-sa"
-}
-
 variable "sa_location" {
   type        = string
   description = "The Azure region where resources will be created"
@@ -56,12 +27,6 @@ variable "sa_container_name" {
   type        = string
   description = "The name of the storage container"
   default = "sacn"
-}
-
-variable "vnet_rg_name" {
-  type        = string
-  description = "Resource group name"
-  default = "rg-vnet"
 }
 
 variable "vnet_rg_location" {
@@ -86,12 +51,6 @@ variable "subnet_name" {
   type        = string
   description = "Subnet name"
   default = "subnet"
-}
-
-variable "vm_rg_name" {
-  type        = string
-  description = "Resource group name"
-  default = "rg-vm"
 }
 
 variable "vm_rg_location" {
