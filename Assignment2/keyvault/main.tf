@@ -34,6 +34,10 @@ resource "azurerm_key_vault" "kv" {
  network_acls {
          bypass = "AzureServices"
          default_action = "Deny"
+
+ip_rules = [
+        "88.95.187.52"
+    ]
      }
      
   access_policy {
