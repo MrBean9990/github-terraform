@@ -38,7 +38,7 @@ variable "vnet_rg_location" {
 variable "vnet_name" {
   type        = string
   description = "Virtual network name"
-  default     = "vnet9"
+  default     = "vnet13"
 }
 
 variable "nsg_name" {
@@ -94,5 +94,5 @@ variable "vm_password" {
 variable "rg_name" {
   type        = string
   description = "Name of the Azure Resource Group where resources will be created."
-  default     = "mv-rg-assignment"
+  default     = "mv-rg-assignment-2"
 }
