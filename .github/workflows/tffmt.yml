@@ -20,4 +20,6 @@ jobs:
           terraform_version: 1.0.0  # Specify the version you want to use
 
       - name: Run 'terraform fmt'
-        run: terraform fmt -check -diff
+        run: |
+          cd ./Assignment2 
+          terraform fmt -check -diff
