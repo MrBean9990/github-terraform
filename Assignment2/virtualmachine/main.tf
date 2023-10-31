@@ -30,12 +30,6 @@ resource "azurerm_linux_virtual_machine" "linux_vm" {
   size                = "Standard_F2"
   admin_username      = var.vm_username
   admin_password      = var.vm_password
-  disable_password_authentication = true  
-  
-  admin_ssh_key {
-    username   = "your_ssh_username"        
-    public_key = file("~/.ssh/id_rsa.pub") 
-  }
   network_interface_ids = [
     azurerm_network_interface.vm_nic.id,
   ]
