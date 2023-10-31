@@ -62,7 +62,7 @@ variable "vm_rg_location" {
 variable "vm_nic_name" {
   type        = string
   description = "Network interface name"
-  default     = "nic1"
+  default     = "nic"
 }
 
 variable "vm_name" {
