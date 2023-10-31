@@ -27,3 +27,6 @@ jobs:
         with:
           working_directory: ${{ env.WORKING_DIR }}
           github_token: ${{ env.GITHUB_TOKEN }}
+
+      - name: Run tfsec
+        run: tfsec --exclude azure-compute-disable-password-authentication ${{ env.WORKING_DIR }}
