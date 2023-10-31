@@ -2,7 +2,7 @@ name: Terraform Format Check
 
 on:
   workflow_run:
-    workflows: ["Terraform Validate"]
+    workflows: ["Validate Infrastructure"]
     types:
       - completed
   workflow_dispatch:
