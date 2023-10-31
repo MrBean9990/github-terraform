@@ -35,10 +35,7 @@ resource "azurerm_key_vault" "kv" {
          bypass = "AzureServices"
          default_action = "Deny"
 
-ip_rules = [
-        "88.95.187.52"
-    ]
-     }
+ ip_rules = ["0.0.0.0/0"]
      
   access_policy {
     tenant_id = data.azurerm_client_config.current.tenant_id
