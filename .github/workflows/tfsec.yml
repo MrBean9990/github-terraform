@@ -1,12 +1,12 @@
 name: Terraform Security Check
 
 on:
-  workflow_run:
-    workflows: ["Validate Infrastructure"]
-    types:
-      - completed
-  workflow_dispatch:
-
+  push:
+    branches:
+     - 'edit'
+    paths:
+      - 'Assignment2/**'
+      
 jobs:
   terraform:
     name: 'Security Check'
