@@ -1,12 +1,11 @@
 name: Terraform Security Check
 
 on:
-  # Triggers the workflow on push or pull request events
- push:
-    branches:
-      - 'Edit'
-    paths:
-      - 'Assignment2/**'
+  workflow_run:
+    workflows: ["Validate Infrastructure"]
+    types:
+      - completed
+  workflow_dispatch:
 
 jobs:
   terraform:
