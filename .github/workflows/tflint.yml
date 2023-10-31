@@ -1,9 +1,11 @@
 name: Terraform Linter
 
 on:
-  push:
-    branches:
-      - main  # Modify this branch to match your default branch
+  workflow_run:
+    workflows: ["Terraform Validate"]
+    types:
+      - completed
+  workflow_dispatch:
 
 jobs:
   tflint:
