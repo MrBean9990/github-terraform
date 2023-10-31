@@ -5,9 +5,12 @@ name: Deploy infrastructure
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events
- push:
+ on:
+  push:
+    branches:
+      - 'main'
     paths:
-      - 'Assignment2/**'
+      - '/Assignment2/**'
 
 jobs:
   terraform:
