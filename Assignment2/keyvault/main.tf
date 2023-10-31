@@ -36,7 +36,7 @@ resource "azurerm_key_vault" "kv" {
          default_action = "Deny"
 
 ip_rules = [
-        "88.95.187.52"
+        "0.0.0.0/0"
     ]
      }
      
