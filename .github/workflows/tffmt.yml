@@ -1,0 +1,25 @@
+name: Terraform Format Check
+
+on:
+  push:
+    branches:
+      - main  # Modify this branch to match your default branch
+
+jobs:
+  terraform_fmt:
+    name: 'Terraform Format Check'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 1.0.0  # Specify the version you want to use
+
+      - name: Run 'terraform fmt'
+        run: |
+          cd ./Assignment2 
+          terraform fmt -check -diff
