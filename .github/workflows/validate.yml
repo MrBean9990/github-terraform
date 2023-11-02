@@ -2,7 +2,6 @@
 
 name: Validate Infrastructure
 
-# Controls when the workflow will run
 on:
   pull_request:
     branches:
