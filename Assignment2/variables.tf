@@ -38,7 +38,7 @@ variable "vnet_rg_location" {
 variable "vnet_name" {
   type        = string
   description = "Virtual network name"
-  default     = "vnet13"
+  default     = "vnet14"
 }
 
 variable "nsg_name" {
