@@ -3,9 +3,9 @@
 name: Validate Infrastructure
 
 on:
-  pull_request:
+  push:
     branches:
-      - 'main'
+      - 'edit'
     paths:
       - 'Assignment2/**'
 
