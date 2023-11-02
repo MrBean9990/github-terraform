@@ -1,4 +1,4 @@
-name: Terraform Security Chec
+name: Terraform Security Check
 
 on:
   workflow_run:
