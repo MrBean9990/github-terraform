@@ -22,8 +22,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
-      - name: Set TFSEC_CUSTOM_RULES
-        run: echo "TFSEC_CUSTOM_RULES={\"azure-compute-disable-password-authentication\":{\"bypass\":true}}" >> $GITHUB_ENV
       - name: tfsec
         uses: aquasecurity/tfsec-action@v1.0.3
         with:
