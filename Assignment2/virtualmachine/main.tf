@@ -23,15 +23,13 @@ resource "azurerm_network_interface" "vm_nic" {
   }
 }
 
-#tfsec:ignore:azure-compute-disable-password-authentication
-resource "azurerm_linux_virtual_machine" "linux_vm" {
+resource "azurerm_windows_virtual_machine" "virtual_machine" {
   name                = var.vm_name
   resource_group_name = azurerm_resource_group.vm_rg.name
   location            = azurerm_resource_group.vm_rg.location
   size                = "Standard_F2"
-  admin_username      = var.vm_username
-  admin_password      = var.vm_password
-  disable_password_authentication = false
+  admin_username      = "adminuser"
+  admin_password      = "P@$$w0rd1234!"
   network_interface_ids = [
     azurerm_network_interface.vm_nic.id,
   ]
@@ -42,9 +40,9 @@ resource "azurerm_linux_virtual_machine" "linux_vm" {
   }
 
   source_image_reference {
-    publisher = "Canonical"
-    offer     = "0001-com-ubuntu-server-focal"
-    sku       = "20_04-lts"
+    publisher = "MicrosoftWindowsServer"
+    offer     = "WindowsServer"
+    sku       = "2016-Datacenter"
     version   = "latest"
   }
 }

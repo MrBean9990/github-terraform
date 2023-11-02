@@ -94,5 +94,5 @@ variable "vm_password" {
 variable "rg_name" {
   type        = string
   description = "Name of the Azure Resource Group where resources will be created."
-  default     = "mv-rg-asgn2"
+  default     = "mv-rg-asgn2test"
 }
