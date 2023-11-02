@@ -23,7 +23,7 @@ resource "azurerm_network_interface" "vm_nic" {
   }
 }
 
-#tfsec:ignore:azure-compute-disable-password-authentication
+#tfsec:ignore:azure-compute-disable-password-authenticatio
 resource "azurerm_linux_virtual_machine" "linux_vm" {
   name                = var.vm_name
   resource_group_name = azurerm_resource_group.vm_rg.name
