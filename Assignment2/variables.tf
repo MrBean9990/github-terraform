@@ -8,7 +8,7 @@ variable "kv_location" {
 variable "kv_base_name" {
   type        = string
   description = "Name of the Key Vault"
-  default     = "vaultkey"
+  default     = "kvl"
 }
 
 variable "sa_base_name" {
