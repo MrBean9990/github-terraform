@@ -1,4 +1,4 @@
-###### LOCATION VARIALBES ######
+###### LOCATION VARIABLES ######
 variable "kv_location" {
   type        = string
   description = "location of the Key Vault"
@@ -13,7 +13,7 @@ variable "sa_location" {
 
 
 
-###### RESOURCE GROUP LOCATION VARIALBES ######
+###### RESOURCE GROUP LOCATION VARIABLES ######
 variable "vnet_rg_location" {
   type        = string
   description = "Resource group location"
@@ -28,7 +28,7 @@ variable "vm_rg_location" {
 
 
 
-###### KEY VAULT VARIALBES ######
+###### KEY VAULT VARIABLES ######
 variable "kv_base_name" {
   type        = string
   description = "Name of the Key Vault"
@@ -37,7 +37,7 @@ variable "kv_base_name" {
 
 
 
-###### NETWORK VARIALBES ######
+###### NETWORK VARIABLES ######
 variable "vnet_name" {
   type        = string
   description = "Virtual network name"
@@ -56,14 +56,15 @@ variable "subnet_name" {
   default     = "subnet"
 }
 
+
+
+
 ###### STORAGE ACCOUNT VARIABLES ######
 variable "sa_base_name" {
   type        = string
   description = "The name of the storage account"
   default     = "sabn"
 }
-
-
 
 variable "sa_container_name" {
   type        = string
@@ -73,7 +74,7 @@ variable "sa_container_name" {
 
 
 
-###### VM VARIALBES ######
+###### VM VARIABLES ######
 variable "vm_nic_name" {
   type        = string
   description = "Network interface name"
