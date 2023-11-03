@@ -41,7 +41,7 @@ variable "kv_base_name" {
 variable "vnet_name" {
   type        = string
   description = "Virtual network name"
-  default     = "vnet17"
+  default     = "vnet1"
 }
 
 variable "nsg_name" {
