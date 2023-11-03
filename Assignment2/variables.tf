@@ -8,7 +8,7 @@ variable "kv_location" {
 variable "kv_base_name" {
   type        = string
   description = "Name of the Key Vault"
-  default     = "keyv"
+  default     = "kvl"
 }
 
 variable "sa_base_name" {
@@ -38,7 +38,7 @@ variable "vnet_rg_location" {
 variable "vnet_name" {
   type        = string
   description = "Virtual network name"
-  default     = "vnet15"
+  default     = "vnet17"
 }
 
 variable "nsg_name" {
@@ -88,11 +88,11 @@ variable "vm_password" {
   type        = string
   description = "Virtual machine password"
   sensitive   = true
-  default     = "d2fSD_!EfdX12tPASSWORD6"
+  default     = "d2fSD_!EfdX12tPassWORD1"
 }
 
 variable "rg_name" {
   type        = string
   description = "Name of the Azure Resource Group where resources will be created."
-  default     = "mv-rg-asgn2test"
+  default     = "mv-rg-asgn2tst"
 }
