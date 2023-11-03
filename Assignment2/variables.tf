@@ -32,7 +32,7 @@ variable "vm_rg_location" {
 variable "kv_base_name" {
   type        = string
   description = "Name of the Key Vault"
-  default     = "keeyvault"
+  default     = "keyy"
 }
 
 
