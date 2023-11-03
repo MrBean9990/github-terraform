@@ -1,3 +1,6 @@
+#  Modestas Volkovas, IIKG3005 - ASSIGNMENT 2
+#  FOR MORE INFORMATION ON THE CONFIGURATION, PLEASE REFER TO THE READ.ME FILE.
+
 locals {
   workspace_suffix = terraform.workspace == "default" ? "" : terraform.workspace
   rg_name          = terraform.workspace == "default" ? var.rg_name : "${var.rg_name}-${local.workspace_suffix}"
