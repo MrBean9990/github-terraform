@@ -3,6 +3,7 @@ locals {
   rg_name          = terraform.workspace == "default" ? var.rg_name : "${var.rg_name}-${local.workspace_suffix}"
 }
 
+
 module "keyvault" {
   source        = "./keyvault"
   kv_rgname     = local.rg_name

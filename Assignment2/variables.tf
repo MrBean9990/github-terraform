@@ -96,3 +96,18 @@ variable "rg_name" {
   description = "Name of the Azure Resource Group where resources will be created."
   default     = "mv-rg-asgn2tst"
 }
+
+
+variable "company" {
+  type        = string
+  description = "Company name"
+  default     = "OperaTerra AS"
+}
+
+variable "project" {
+  type        = string
+  description = "Project name"
+  default     = "Assignment2"
+}
+
+
