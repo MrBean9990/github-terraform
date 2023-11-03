@@ -68,3 +68,4 @@ resource "azurerm_key_vault_secret" "sa_accesskey" {
     var.sa_name
   ]
 }
+
