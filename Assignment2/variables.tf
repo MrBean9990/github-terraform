@@ -32,7 +32,7 @@ variable "vm_rg_location" {
 variable "kv_base_name" {
   type        = string
   description = "Name of the Key Vault"
-  default     = "keyy"
+  default     = "key"
 }
 
 
@@ -41,7 +41,7 @@ variable "kv_base_name" {
 variable "vnet_name" {
   type        = string
   description = "Virtual network name"
-  default     = "vnet2"
+  default     = "vnet3"
 }
 
 variable "nsg_name" {
