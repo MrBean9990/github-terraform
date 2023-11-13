@@ -17,7 +17,7 @@ variable "sa_location" {
 variable "vnet_rg_location" {
   type        = string
   description = "Resource group location"
-  default     = "westeurope"
+  default     = "westeuroe"
 }
 
 variable "vm_rg_location" {
